@@ -1,6 +1,6 @@
 //HEADER BUTTONS
 const pagebtn = [];
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < 5; i++) {
 	pagebtn.push(document.querySelector("#page" + (i + 1).toString() + "btn"));
 	//console.log(pagebtn[i]);
 }
@@ -60,6 +60,9 @@ pagebtn[2].addEventListener("click", function() {
 });
 pagebtn[3].addEventListener("click", function() {
 	showPages(4);
+});
+pagebtn[4].addEventListener("click", function() {
+	showPages(5);
 });
 
 //SETUP BUTTONS
